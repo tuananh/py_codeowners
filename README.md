@@ -6,6 +6,15 @@ CODEOWNERS parser for Python, using Rust binding.
 
 Just to learn basic of Rust :)
 
+## Usage
+
+```python
+from py_codeowners import PyCodeowners
+
+owners = PyCodeowners("./testdata/CODEOWNERS")
+print(owners.of("team-a/test.js"))
+```
+
 ## Development
 
 ```sh
