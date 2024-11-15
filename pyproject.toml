@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.1,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "py_codeowners"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.poetry]
+name = "py_codeowners"
+version = "0.1.0"
+description = ""
+authors = ["Tuan Anh Tran <me@tuananh.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+maturin = "^1.1.0"

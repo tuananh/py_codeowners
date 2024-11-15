@@ -1,0 +1,12 @@
+[package]
+name = "py_codeowners"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "py_codeowners"
+crate-type = ["cdylib"]
+
+[dependencies]
+codeowners = "0.1.3"
+pyo3 = "0.22.6"
